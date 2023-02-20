@@ -45,6 +45,7 @@ body {
     letter-spacing: 0.02em;
     color: #434455;
 }
+
 /* ---------------/header-------------- */
 
 /* --------------hero-section---------- */
@@ -52,13 +53,13 @@ body {
     background-color: #434455;
 }
 
-.hero-title {font-weight: 700;
+.hero-title {
+    font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
-    text-align: center;
     letter-spacing: 0.02em;
     color: #FFFFFF;
-    }
+}
 
 .hero-button {
     font-family: inherit;
@@ -70,9 +71,25 @@ body {
     letter-spacing: 0.04em;
     color: #FFFFFF;
 }
+
 /* --------------/hero-section---------- */
 
 /* -------------Section about----------- */
+
+
+.visually-hidden {
+    position: absolute;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    width: 1px;
+}
+
 
 .about-title {
     font-weight: 500;
@@ -81,6 +98,7 @@ body {
     letter-spacing: 0.02em;
     color: #2E2F42;
 }
+
 .about-subtitle {
     font-weight: 400;
     font-size: 16px;
@@ -88,57 +106,101 @@ body {
     letter-spacing: 0.02em;
     color: #434455;
 }
+
 /* ------------/Section about----------- */
 
 /* ------------Work section------------- */
 
-.worck-title{
+.worck-title {
     font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
+    line-height: 1.1;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2E2F42;
 }
+
 /* -----------/Work section------------- */
 
 /* -----------Team section-------------- */
 
-.team-maintitle{
+.team-maintitle {
     font-size: 36px;
     line-height: 1.11;
-    text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2E2F42;
 }
 
-.team-title{
+.team-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    text-align: center;
     letter-spacing: 0.02em;
     color: #2E2F42;
 }
 
-.team-subtitle{
+.team-subtitle {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    text-align: center;
     letter-spacing: 0.02em;
     color: #434455;
 }
+
 /* ----------/Team section-------------- */
 
 /* -----------Footer section------------ */
 
-.footer-subtitle{
+.footer-subtitle {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #E7E9FC;
 }
+
 /* ----------/Footer section------------ */
+
+
+/* -----------------------------------------------------portfolio---------------------------------------------------- */
+
+
+/* -----------butons------------- */
+
+.style {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #4D5AE5;
+}
+
+.style:hover,
+.style:focus {
+    color: #FFFFFF;
+}
+
+/* -----------------/butons---------------- */
+
+/* -----------------presentation------- */
+
+.presentation-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+
+.presentation-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
