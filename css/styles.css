@@ -1,9 +1,37 @@
-body {
-    font-family: 'Roboto', sans-serif;
+:root {
+    --main-title-color: #2E2F42;
+    --main-subtitle-color: #434455;
+    --contacts-color: #434455;
+    --logo-font-acsent: 'Raleway'sans-serif;
+    --logo-font: 'Raleway'sans-serif;
+
 }
 
-.header-logo{
-    font-family: 'Raleway';
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFFFFF;
+}
+
+
+.subtitle {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.contacts {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--contacts-color);
+
+}
+
+.header-logo {
+    font-family: var('Raleway'sans-serif);
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -16,7 +44,7 @@ body {
 }
 
 .logo-acsent {
- 
+
     color: #4D5AE5;
 }
 
@@ -32,10 +60,10 @@ body {
 }
 
 .header-link {
-    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    font-weight: 500;
     color: #2E2F42;
 }
 
@@ -47,28 +75,6 @@ body {
 .header-tel:focus {
     color: #404BBF;
 }
-
-.header-mail {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-}
-
-.header-tel {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-}
-
-/* ---------------/header-------------- */
 
 /* --------------hero-section---------- */
 .hero-section {
@@ -83,21 +89,32 @@ body {
     color: #FFFFFF;
 }
 
-.hero-button {
-    font-family: inherit;
+.button-text {
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     display: flex;
     align-items: center;
+    text-align: center;
     letter-spacing: 0.04em;
     color: #FFFFFF;
+    text-decoration: none;
 }
 
-/* --------------/hero-section---------- */
+.hero-button {
+    background-color: #4D5AE5;
+    border-color: #4D5AE5;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: #404BBF;
+    border-color: #404BBF
+}
 
 /* -------------Section about----------- */
-
 
 .visually-hidden {
     position: absolute;
@@ -118,7 +135,7 @@ body {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--main-title-color);
 }
 
 .about-subtitle {
@@ -126,10 +143,8 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--main-subtitle-color);
 }
-
-/* ------------/Section about----------- */
 
 /* ------------Work section------------- */
 
@@ -138,10 +153,8 @@ body {
     line-height: 1.1;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: #2E2F42;
+    color: var(--main-title-color);
 }
-
-/* -----------/Work section------------- */
 
 /* -----------Team section-------------- */
 
@@ -150,7 +163,7 @@ body {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: #2E2F42;
+    color: var(--main-title-color);
 }
 
 .team-title {
@@ -158,18 +171,13 @@ body {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--main-title-color);
 }
 
 .team-subtitle {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--main-subtitle-color);
 }
-
-/* ----------/Team section-------------- */
 
 /* -----------Footer section------------ */
 
@@ -181,15 +189,23 @@ body {
     color: #E7E9FC;
 }
 
-/* ----------/Footer section------------ */
-
-
 /* -----------------------------------------------------portfolio---------------------------------------------------- */
 
 
 /* -----------butons------------- */
 
-.style {
+.portfolio-button {
+    background-color: #F4F4FD;
+    border-color: #E7E9FC;
+}
+
+.portfolio-button:focus,
+.portfolio-button:hover {
+    background-color: #404BBF;
+    border-color: #404BBF;
+}
+
+.text-style {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -200,14 +216,13 @@ body {
     text-align: center;
     letter-spacing: 0.04em;
     color: #4D5AE5;
+    text-decoration: none;
 }
 
-.style:hover,
-.style:focus {
+.text-style:hover,
+.text-style:focus{
     color: #FFFFFF;
 }
-
-/* -----------------/butons---------------- */
 
 /* -----------------presentation------- */
 
@@ -216,13 +231,12 @@ body {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--main-title-color);
 }
+
+
 
 .presentation-description {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--main-subtitle-color);
 }
