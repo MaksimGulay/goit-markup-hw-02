@@ -2,14 +2,16 @@
     --main-title-color: #2E2F42;
     --main-subtitle-color: #434455;
     --contacts-color: #434455;
-    --logo-font-acsent: 'Raleway'sans-serif;
-    --logo-font: 'Raleway'sans-serif;
+    --logo-font-acsent: 'Raleway', sans-serif;
+    --logo-font: 'Raleway', sans-serif;
 
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #FFFFFF;
+    color: #2E2F42;
+    font-size: 16px;
 }
 
 
@@ -23,7 +25,6 @@ body {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--contacts-color);
@@ -31,12 +32,11 @@ body {
 }
 
 .header-logo {
-    font-family: var('Raleway'sans-serif);
+    font-family: var(--logo-font-acsent);
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.3;
-    display: flex;
     align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -53,6 +53,10 @@ body {
     color: #2E2F42;
 }
 
+.logo-footer{
+    color: #F4F4FD;
+}
+
 /* ---------------header-------------- */
 .list {
     list-style: none;
@@ -60,7 +64,6 @@ body {
 }
 
 .header-link {
-    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     font-weight: 500;
@@ -76,9 +79,13 @@ body {
     color: #404BBF;
 }
 
+.header{
+    border-bottom: 1px solid #E7E9FC;
+}
+
 /* --------------hero-section---------- */
 .hero-section {
-    background-color: #434455;
+    background-color: #2E2F42
 }
 
 .hero-title {
@@ -93,7 +100,6 @@ body {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
     line-height: 1.5;
     display: flex;
     align-items: center;
@@ -140,7 +146,6 @@ body {
 
 .about-subtitle {
     font-weight: 400;
-    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--main-subtitle-color);
@@ -157,6 +162,10 @@ body {
 }
 
 /* -----------Team section-------------- */
+
+.team-section{
+    background: #F4F4FD;
+}
 
 .team-maintitle {
     font-size: 36px;
@@ -183,12 +192,14 @@ body {
 
 .footer-subtitle {
     font-weight: 400;
-    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #E7E9FC;
 }
 
+.footer-section{
+    background: #2E2F42;
+}
 /* -----------------------------------------------------portfolio---------------------------------------------------- */
 
 
@@ -209,7 +220,6 @@ body {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
     line-height: 1.5;
     display: flex;
     align-items: center;
@@ -220,7 +230,7 @@ body {
 }
 
 .text-style:hover,
-.text-style:focus{
+.text-style:focus {
     color: #FFFFFF;
 }
 
@@ -239,4 +249,8 @@ body {
 .presentation-description {
     font-weight: 400;
     color: var(--main-subtitle-color);
+}
+
+.presentation-link{
+    text-decoration: none;    
 }
