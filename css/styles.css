@@ -206,21 +206,21 @@ body {
 
 /* -----------butons------------- */
 
-.portfolio-button {
+.buttons {
     background-color: #F4F4FD;
     border-color: #E7E9FC;
 }
 
-.portfolio-button:focus,
-.portfolio-button:hover {
+.buttons:focus,
+.buttons:hover {
     background-color: #404BBF;
     border-color: #404BBF;
 }
 
-.text-button {font-family: 'Roboto', sans-serif;
+.buttons-text {font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 30px;
+    font-size: 16px;
     line-height: 1.5;
     display: flex;
     align-items: center;
@@ -228,6 +228,10 @@ body {
     letter-spacing: 0.04em;
     color: #4D5AE5;
     text-decoration: none;
+}
+.buttons-text:focus,
+.buttons-text:hover {
+    color: #FFFFFF;
 }
 
 
